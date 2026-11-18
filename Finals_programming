@@ -1,0 +1,390 @@
+lessons = {
+    1: {
+        "title": "Introduction to Programming",
+        "text": """
+What Is Programming Language?
+
+A programming language is a special language
+that computers understand and use to perform
+tasks.
+
+What Is Python Programming?
+
+Python is a widely-used programming language that was created by Guido van Rossum in 1991.
+A dutch software engineer best known for creating the Python programming language in 1991
+He designed Python with the goal of making programming simple, readable, and easy to
+learn while remaining powerful enough for professional software development.
+
+Python is a high-level, interpreted, and general-purpose programming language
+designed to be simple, readable, and easy to learn.
+
+Why Learn Python?
+1.Simple and easy to learn - great for beginners.
+2.Readable syntax - code looks almost like english.
+3.Versatile - used in many fields ( AI, web, automation, games, etc.)
+4.Huge community - lots of support, tutorials, and libraries.
+
+Why do we need a programming language?
+  Computers do not understand English. We use a programming language
+  (like Python) to write instructions the computer can understand.
+
+Key words:
+  - Program   : a set of instructions for the computer
+  - Code      : the text we write in a programming language
+  - Algorithm : the step-by-step plan to solve a problem
+
+Programs work the same way: one step after another.
+""",
+        "question": "What is a program?",
+        "choices": {
+            "A": "A set of instructions that a computer follows",
+            "B": "A type of computer screen",
+            "C": "A game that only children play",
+            "D": "The electricity that powers a computer",
+        },
+        "answer": "A",
+    },
+    2: {
+        "title": "Python Basic Syntax",
+        "text": """
+What Is Python Syntax?
+
+Syntax refers to the set of rules that tells us how to correctly write a program in Python.
+
+1. Python is Case-Sensitive Python - treats uppercase and lowercase letters differently.
+2. Indentation - Unlike other programming languages, Python uses indentation (spaces) 
+to define blocks of code.
+
+Print Statement - The print() function displays information on the screen.
+
+Syntax:
+print(value)
+print – the function that displays output.
+() – parentheses that contain the information to be displayed.
+value – the text, number, variable, or expression you want to show.
+
+Printing Text - Text (also called a string) must be enclosed in quotation marks.
+
+Printing Numbers - You can print numbers directly without quotation marks.
+
+Python Comments - Comments are ignored by Python. They are used to explain the code.
+
+Syntax means the rules of writing code. Here are the basic ones:
+
+1) print() shows a message on the screen:
+     print("Hello, World!")
+
+2) Comments start with # . Python ignores them. They are notes for humans:
+     # This is a comment
+
+3) Variables store information. Use = to give a value:
+     name = "Anna"
+     age = 12
+
+4) Python is CASE SENSITIVE:
+     age and Age are two different names.
+
+5) Indentation (the spaces at the start of a line) matters.
+   Python uses it to group code together.
+""",
+        "question": "Which symbol starts a comment in Python?",
+        "choices": {
+            "A": "//",
+            "B": "#",
+            "C": "**",
+            "D": "<!--",
+        },
+        "answer": "B",
+    },
+    3: {
+        "title": "Arithmetic Operators and Expressions",
+        "text": """
+What are Arithmetic Operators?
+
+Arithmetic operators are symbols used to perform mathematical calculations on numbers.
+They work the same way as the operators used in everyday mathematics.        
+        
+Expressions in Python - An expression is a combination of values, variables, and operators
+that evaluates to a result.
+
+Python follows the order of operations (PEMDAS)
+
+Python can do math. The symbols are called operators:
+
+  +    add               5 + 2   gives 7
+  -    subtract          5 - 2   gives 3
+  *    multiply          5 * 2   gives 10
+  /    divide            5 / 2   gives 2.5
+  //   whole-number divide   5 // 2   gives 2
+  %    remainder         5 % 2   gives 1
+  **   power             5 ** 2  gives 25
+
+An EXPRESSION is a piece of code that gives a value, like 3 + 4 * 2.
+
+Order of operations (just like in math class):
+  1. Brackets ( )
+  2. Powers **
+  3. Multiply and divide  * / // %
+  4. Add and subtract     + -
+
+Example:
+  3 + 4 * 2     gives 11   (multiply first)
+  (3 + 4) * 2   gives 14   (brackets first)
+""",
+        "question": "What is the result of 10 % 3 ?",
+        "choices": {
+            "A": "3",
+            "B": "3.33",
+            "C": "1",
+            "D": "30",
+        },
+        "answer": "C",
+    },
+    4: {
+        "title": "Basic Input and Output in Python",
+        "text": """
+Accepting User Input
+
+Purpose of input in programming
+
+Real-life analogies (e.g., asking for a user's name and
+responding) 
+
+Example:
+Using input() function
+Syntax: variable = input("Prompt message: ")
+All input is string type by default
+
+INPUT means getting information from the user. We use input():
+  name = input("What is your name? ")
+  print("Hello,", name)
+  
+Formatting Output
+Using comma , in print():
+
+OUTPUT means showing information. We use print():
+  print("Hello!")
+  print("Age:", 12)
+
+IMPORTANT: input() always gives you TEXT (a string), even if the
+user types a number.
+
+To do math, change the text into a number:
+  age = int(input("How old are you? "))     # whole number
+  price = float(input("Enter price: "))     # decimal number
+
+  print(age + 1)
+
+Without int(), Python would treat the age as text and the
+math would not work.
+""",
+        "question": "What type of value does input() always return?",
+        "choices": {
+            "A": "A whole number (int)",
+            "B": "A decimal number (float)",
+            "C": "True or False",
+            "D": "Text (a string)",
+        },
+        "answer": "D",
+    },
+    5: {
+        "title": "Conditional Statements in Python",
+        "text": """
+
+Introduction to Conditional statements
+A condition statements allows a program to make decisions based on whether a condition
+is TRUE or FALSE.
+
+Relational Operators
+Relational operators, also called comparison operator, are used to compare two
+values. The results is always either TRUE or FALSE.
+
+Comparison operators:
+  ==  equal to          !=  not equal to
+  >   greater than      <   less than
+  >=  greater or equal  <=  less or equal
+
+The if statements- executes a blocks of code only when a condition is TRUE.
+
+The else statements - the else statements provides an alternative when
+then if condition is FALSE. 
+
+The elif statements is used when there are multiple conditions to evaluate.
+Python checks each condition from top to botton and executes the first
+condition that is TRUE.
+
+Conditional statements let the program make DECISIONS.
+
+  if      : do this if the condition is True
+  elif    : otherwise, check this condition
+  else    : otherwise, do this
+
+Example:
+  score = 75
+
+  if score >= 90:
+      print("Excellent!")
+  elif score >= 60:
+      print("Good job!")
+  else:
+      print("Keep trying!")
+
+This prints: Good job!
+
+Remember:
+  - Put a colon : at the end of the if / elif / else line
+  - Indent the code that belongs inside
+  - Use == to compare, and = to store a value
+""",
+        "question": "What will this code print?\n\n      x = 7\n      if x > 10:\n          print(\"big\")\n      else:\n          print(\"small\")",
+        "choices": {
+            "A": "big",
+            "B": "7",
+            "C": "Nothing",
+            "D": "small",
+        },
+        "answer": "D",
+    },
+    6: {
+        "title": "Logical Operator",
+        "text": """
+What are Logical Operators?
+
+Are used to combine or reverse conditions in python program.
+
+The and operator - returns TRUE only when all conditions are TRUE.
+
+the or operator - returns TRUE when at least one condition is TRUE.
+
+the not operator - reverses the result of the conditions.
+    
+Logical operators combine conditions. There are three:
+
+  and  : True only if BOTH conditions are True
+  or   : True if AT LEAST ONE condition is True
+  not  : flips the answer (True becomes False)
+
+Examples:
+  True and True     gives True
+  True and False    gives False
+  True or False     gives True
+  False or False    gives False
+  not True          gives False
+
+Real example:
+  age = 15
+  has_ticket = True
+
+  if age >= 12 and has_ticket:
+      print("You can enter the movie!")
+
+Both things must be true: age is 12 or more AND you have a ticket.
+""",
+        "question": "What is the result of:  True and False ?",
+        "choices": {
+            "A": "True",
+            "B": "False",
+            "C": "Error",
+            "D": "None",
+        },
+        "answer": "B",
+    },
+    7: {
+        "title": "Introduction to Iteration and Loops",
+        "text": """
+Introduction to Iteration
+
+Iteration means repeating a process. in programming, it means repeatedly executing
+a set of instructions. Each repetition is called an iteration 
+
+1) for loop : repeat a set number of times
+     for i in range(3):
+         print("Hello", i)
+
+   range(3) gives 0, 1, 2 (it starts at 0 and stops BEFORE 3).
+   Output:
+     Hello 0
+     Hello 1
+     Hello 2
+
+2) while loop : repeat as long as a condition is True
+     count = 1
+     while count <= 3:
+         print(count)
+         count = count + 1
+
+   Output:  1  2  3
+
+Careful: if the condition never becomes False, the loop never stops.
+That is called an infinite loop.
+""",
+        "question": "What does this code print?\n\n      for i in range(3):\n          print(i)",
+        "choices": {
+            "A": "1 2 3",
+            "B": "0 1 2 3",
+            "C": "0 1 2",
+            "D": "3",
+        },
+        "answer": "C",
+    },
+}
+
+
+def show_menu():
+    """Show the list of lessons 1 to 7."""
+    print("\n==============================")
+    print("        LESSON MENU")
+    print("==============================")
+    for number in lessons:
+        print(f"  {number}. {lessons[number]['title']}")
+    print("  0. Exit")
+    print("==============================")
+
+
+def run_lesson(number):
+    """Show one lesson, then ask its question."""
+    lesson = lessons[number]
+
+
+    print("\n------------------------------")
+    print(f"Lesson {number}: {lesson['title']}")
+    print("------------------------------")
+    print(lesson["text"])
+
+    input("Press Enter when you are ready for the question...")
+
+
+    print("\nQUESTION:", lesson["question"], "\n")
+    for letter, choice in lesson["choices"].items():
+        print(f"  {letter}. {choice}")
+
+
+    while True:
+        answer = input("\nYour answer (A/B/C/D): ").strip().upper()
+        if answer in lesson["choices"]:
+            break
+        print("Please type A, B, C or D only.")
+
+    if answer == lesson["answer"]:
+        print("Correct! Great job!")
+    else:
+        correct = lesson["answer"]
+        print(f"Not quite. The correct answer is {correct}. {lesson['choices'][correct]}")
+
+
+def main():
+    while True:
+        show_menu()
+        choice = input("Choose a lesson (1-7) or 0 to exit: ").strip()
+
+        if choice == "0":
+            print("Goodbye! Keep learning!")
+            break
+        elif choice.isdigit() and int(choice) in lessons:
+            run_lesson(int(choice))
+            input("\nPress Enter to go back to the menu...")
+        else:
+            print("Invalid choice. Please type a number from 1 to 7.")
+
+
+main()
